@@ -11,7 +11,7 @@ public class ChatCollectionLayout: UICollectionViewFlowLayout {
     private var isInsertingItemsToTop = false
     private var isInsertingItemsToBottom = false
 
-    var scrollIndexPath: IndexPath?
+    public var scrollIndexPath: IndexPath?
 
     override public func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         visibleAttributes = super.layoutAttributesForElements(in: rect)
@@ -24,9 +24,7 @@ public class ChatCollectionLayout: UICollectionViewFlowLayout {
 
     // swiftlint:disable:next cyclomatic_complexity
     override public func prepare(forCollectionViewUpdates updateItems: [UICollectionViewUpdateItem]) {
-        guard let collectionView = collectionView, let visibleAttributes = visibleAttributes else {
-            return
-        }
+        guard let collectionView = collectionView, let visibleAttributes = visibleAttributes else { return }
 
         bottomMostVisibleItem = -Int.max
         topMostVisibleItem = Int.max
