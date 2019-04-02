@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ChatCollectionLayout_Example' do
+  pod 'ChatCollectionLayout', :path => '../'
+
+  target 'ChatCollectionLayout_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
