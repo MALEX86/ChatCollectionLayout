@@ -1,5 +1,5 @@
 PODS:
-  - ChatCollectionLayout (0.1.0)
+  - ChatCollectionLayout (1.0.0)
 
 DEPENDENCIES:
   - ChatCollectionLayout (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ChatCollectionLayout: 33f5474a809f0497f58da1dae1c120e4297db3b8
+  ChatCollectionLayout: 86fc5960506e57bc693e0e6823176475ec840a76
 
-PODFILE CHECKSUM: 8b7f83471789ed0371ae740387062f038138459c
+PODFILE CHECKSUM: f32aef99ac15d8ab793fce0a8c93ae966146004a
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.10.1

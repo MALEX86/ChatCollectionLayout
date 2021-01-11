@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ChatCollectionLayout'
-  s.version          = '0.1.1'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of ChatCollectionLayout.'
 
 # This description is used to generate tags and improve search results.
@@ -25,8 +25,9 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'BarredEwe' => 'barredEwe@gmail.com' }
   s.source           = { :git => 'https://github.com/BarredEwe/ChatCollectionLayout.git', :tag => s.version.to_s }
-  s.swift_version = '4.2'
-  s.ios.deployment_target = '8.0'
+
+  s.swift_version = '5.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ChatCollectionLayout/Classes/**/*'
 

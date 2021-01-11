@@ -1,6 +1,0 @@
-framework module ChatCollectionLayout {
-  umbrella header "ChatCollectionLayout-umbrella.h"
-
-  export *
-  module * { export * }
-}
