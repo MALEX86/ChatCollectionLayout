@@ -43,27 +43,7 @@ public class ChatCollectionLayout: UICollectionViewFlowLayout {
 
         var willInsertItemsToTop = false
         var willInsertItemsToBottom = false
-
-        for updateItem in updateItems {
-            switch updateItem.updateAction {
-            case .insert:
-                guard let indexPathAfterUpdate = updateItem.indexPathAfterUpdate, indexPathAfterUpdate.item != NSNotFound else {
-                    continue
-                }
-                if topMostVisibleItem + updateItems.count > indexPathAfterUpdate.item,
-                    let newAttributes = self.layoutAttributesForItem(at: indexPathAfterUpdate) {
-                    offset += (newAttributes.size.height + self.minimumLineSpacing)
-                    willInsertItemsToTop = true
-                } else if bottomMostVisibleItem <= indexPathAfterUpdate.item,
-                    let newAttributes = self.layoutAttributesForItem(at: indexPathAfterUpdate) {
-                    offset += (newAttributes.size.height + self.minimumLineSpacing)
-                    willInsertItemsToBottom = true
-                }
-            default:
-                break
-            }
-        }
-
+ 
         if willInsertItemsToTop || willInsertItemsToBottom {
             let collectionViewContentHeight = collectionView.contentSize.height
             let collectionViewFrameHeight = collectionView.frame.size.height - (collectionView.contentInset.top + collectionView.contentInset.bottom)
